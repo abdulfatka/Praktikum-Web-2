@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
     // Query untuk menghapus data pasien berdasarkan id
-    $sql = "DELETE FROM pasien WHERE id = ?";
+    $sql = "DELETE FROM dokter WHERE id = ?";
     $stmt = $dbh->prepare($sql);
     $stmt->execute([$id]);
 
